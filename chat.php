@@ -1,12 +1,6 @@
 <?php
-
 if( isset($_POST['login']) ){
-if( !isset($_POST['tel']) ){
-$error = "Enter the phone number";
-}else{
-    
-    header("location:https://api.whatsapp.com/send/?phone=98".$_POST['tel']);
-}
+   header("location:https://api.whatsapp.com/send/?phone=98".$_POST['tel']);
 }
 ?>
 <!doctype html>
@@ -22,12 +16,12 @@ $error = "Enter the phone number";
 <body class="p-3 mb-2 bg-warning text-white" style="margin: 40px; border-radius: 20px ; border-radius: 20px ">
 <div id="main">
 <div class="p-3 mb-2 bg-info text-white"  >
-    <form class="form-inline" dir="rtl" method="post" >
+    <form class="form-inline" method="post" >
   <div class="form-group mb-2">
   </div>
   <div class="form-group mx-sm-3 mb-2">
-    <label for="inputPassword2" class="sr-only">Enter the phone number without zeros</label>
-</br></br><input type="text" name="tel" class="form-control" id="inputPassword2" placeholder="Example : 9189323230">
+    <label for="input" class="sr-only">Enter the phone number I will connect you to WhatsApp</label>
+</br></br><input type="number" name="tel" class="form-control" id="input" placeholder="Example : 9189323230 " required>
   </div>
   </br><center><button name="login" type="submit" class="btn btn-light"> Let's go </button></center>
 </form>
