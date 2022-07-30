@@ -27,11 +27,9 @@ $error = "Enter the phone number";
   </div>
   <div class="form-group mx-sm-3 mb-2">
     <label for="inputPassword2" class="sr-only">Enter the phone number without zeros</label>
-</br></br><input type="text" name="tel" class="form-control" id="inputPassword2" placeholder="مثال : 9189323230">
+</br></br><input type="text" name="tel" class="form-control" id="inputPassword2" placeholder="Example : 9189323230">
   </div>
   </br><center><button name="login" type="submit" class="btn btn-light"> Let's go </button></center>
-
-
 </form>
     </div>
 </div>
